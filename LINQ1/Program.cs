@@ -200,10 +200,20 @@ namespace LINQ1
 
             #region Q13
 
-            var result = Arr.Where(x => x[1] == 'i').Reverse();
+            string[] ArrDigits =
+            {
+                "five",
+                "six",
+                "eight",
+                "nine",
+                "seven",
+                "three",
+                "ten"
+            };
 
-            Console.WriteLine($"\n ------ Reversed Words ------ \n");
+            var result = ArrDigits.Where(x => x[1] == 'i').Reverse();
 
+            Console.WriteLine("\n ------ Reversed Words ------ \n");
 
             foreach (var word in result)
             {
